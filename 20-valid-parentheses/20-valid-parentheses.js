@@ -39,6 +39,9 @@ var isValid = function(s) {
     }
   }  
   
-  return stack.length > 0 ? false : true;
+  if (stack.length > 0) {
+    return false;
+  } 
+  return true;
   
 };
