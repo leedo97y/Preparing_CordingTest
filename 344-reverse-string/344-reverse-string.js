@@ -3,7 +3,7 @@
  * @return {void} Do not return anything, modify s in-place instead.
  */
 var reverseString = function(s) {
-  let map;
+  let map = [];
   map = s.reverse();
   
   return map;
