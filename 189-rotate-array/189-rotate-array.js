@@ -6,12 +6,16 @@
 var rotate = function(nums, k) {
   
   k %= nums.length
-  let removed = nums.length - k
+  // start point
+  let removed = nums.length - k;
+  // whole length - start point
   nums.splice(0,0, ...nums.splice(removed));
-  
+  // nums.splice (0, 0, add item)
+  // add item in here = ...nums.splice(removed)
   
   
   if (nums.length === 1) {
     return;
   }
+  // if nums.length is 1, just return 
 };
